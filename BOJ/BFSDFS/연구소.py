@@ -40,6 +40,7 @@ def dfs(count):
                     virus(i, j)
         result = max(result, safe())
         return
+    # 빈 공간에 울타리 설치
     for i in range(n):
         for j in range(m):
             if data[i][j] == 0:
