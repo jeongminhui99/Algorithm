@@ -29,7 +29,9 @@ while q:
         if 0 <= nx and nx < n and 0 <= ny and ny < n :
             if graph[nx][ny] == 0:
                 graph[nx][ny] = virus
-                q.append((virus, ))
+                q.append((virus, s+1, nx, ny))
+
+print(graph[target_x - 1][target_y - 1])
 
 
 
