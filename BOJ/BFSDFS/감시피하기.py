@@ -13,7 +13,7 @@ for i in range(n):
             spaces.append((i, j))
 
 def watch(x, y, direction):
-    if direction == 0:
+    if direction == 0: # 왼쪽 방향 감시
         while y >= 0:
             if board[x][y] == 'S':
                 return True
@@ -27,14 +27,14 @@ def watch(x, y, direction):
             if board[x][y] == 'O':
                 return False
             y += 1
-    if direction == 2:
+    if direction == 2: # 위쪽 방향 감시
         while x >= 0:
             if board[x][y] == 'S':
                 return True
             if board[x][y] == 'O':
                 return False
             x -= 1
-    if direction == 3:
+    if direction == 3: # 아래쪽 방향 감시
         while x < n:
             if board[x][y] == 'S':
                 return True
