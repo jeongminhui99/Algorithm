@@ -13,3 +13,6 @@ def longestPalindrome(self, s:str) -> str:
         result = max(result, expand(i, i+1), expand(i, i+2), key=len)
 
     return result
+
+str = ['1', '2', '3']
+print(str[1:1])
