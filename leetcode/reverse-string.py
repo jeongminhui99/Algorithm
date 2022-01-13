@@ -9,3 +9,5 @@ def reverseString(self, s: List[str]) -> None:
         right -= 1
 
 # 2) 파이썬다운 방식
+def reverseString(self, s: List[str]) -> None:
+    s.reverse()
