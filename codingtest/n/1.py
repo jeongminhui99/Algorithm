@@ -11,5 +11,7 @@ def solution_f(A):
         elif diff > 0 :
             result += diff
         idx += 1
+    if result > 1000000000 :
+        return -1
     return result
 print(solution_f([6,2,3,5,6,3]))
