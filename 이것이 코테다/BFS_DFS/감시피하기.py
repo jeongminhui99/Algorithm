@@ -28,21 +28,21 @@ def watch(x, y, direction):
                 return True
             if board[x][y] == 'O':
                 return False
-        y += 1
+            y += 1
     if direction == 2: # 위
         while x >= 0:
             if board[x][y] == 'S':
                 return True
             if board[x][y] == 'O':
                 return False
-        x -= 1
+            x -= 1
     if direction == 3: # 아래
         while x < n:
             if board[x][y] == 'S':
                 return True
             if board[x][y] == 'O':
                 return False
-        x += 1
+            x += 1
     return False
 
 # 장애물 설치 이후에, 한명이라도 학생이 감지되는지 검사
